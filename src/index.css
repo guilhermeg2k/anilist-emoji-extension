@@ -1,0 +1,21 @@
+.popup-al-emoji-ext{
+    display: none !important;
+    background: rgb(var(--color-foreground));
+    border-radius: 4px;
+    color: rgb(var(--color-text));
+    justify-content: space-around;
+    margin-bottom: 12px;
+    padding: 12px 20px;
+}
+
+.popup-al-emoji-ext div{
+  display: flex;
+  overflow: auto;
+  font-size: 3rem;
+  padding: 5px 0;
+}
+
+.show {
+  display: flex !important;
+}
+
