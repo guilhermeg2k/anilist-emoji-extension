@@ -1,8 +1,14 @@
 {
   "manifest_version": 3,
   "name": "Anilist Emoji Extension",
-  "description": "Anilist Emoji Extension",
+  "description": "This extension adds a emoji select box to anilist text areas",
   "version": "1.0",
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
   "permissions": [
     "storage"
   ],
@@ -16,8 +22,7 @@
       ],
       "matches": [
         "https://anilist.co/*"
-      ],
-      "run_at": "document_end"
+      ]
     }
   ]
 }
