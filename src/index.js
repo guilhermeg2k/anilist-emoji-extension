@@ -60,7 +60,6 @@ const addEmojiToTextArea = async (emoji, textArea) => {
 
 const createEmojiOptions = async (selectBoxInnerDiv, textArea) => {
   const emojisSorted = await buildEmojisSortedByRecentUsage();
-  console.log("🚀 ~ file: index.js:62 ~ createEmojiOptions ~ emojisSorted", emojisSorted)
 
   for (const emoji of emojisSorted) {
     const newOption = document.createElement('span');
@@ -106,6 +105,7 @@ const createEmojiSelectorBox = async (textArea) => {
   // This was needed to fix the overflow of the forum editor
   const mdEditorToolBoxElement = document.querySelector('.editor');
   if (mdEditorToolBoxElement) {
+    mdEditorToolBoxElement.parentElement.style.overflow = 'auto';
     mdEditorToolBoxElement.style.overflow = 'auto';
   }
 
